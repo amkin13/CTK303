@@ -1,0 +1,52 @@
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url(pattern.png);
+}
+
+main {
+    grid-column: span 9;
+    background-color: white;
+    border-radius: 12px;
+    padding: 12px;
+    color: rgb(73, 73, 73);
+    box-shadow: 0.33em 0.33em rgb(0, 35, 142);
+}
+
+main ul li {
+    margin: 8px auto;
+}
+
+#wrapper {
+    margin: 12px auto;
+    width: 1400px;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 12px;
+}
+
+#main_header {
+    color: rgb(14, 0, 102);
+    margin-left: 60px;
+}
+
+#main_cover {
+    grid-column: span 3;
+    border-radius: 12px;
+    box-shadow: 0.33em 0.33em rgb(0, 35, 142);
+}
+
+#main_sources {
+    text-align: center;
+    background-color: rgb(211, 210, 232);
+    grid-column: span 12;
+    border-radius: 12px;
+    box-shadow: 0.33em 0.33em rgb(0, 35, 142);
+    padding: 8px;
+    padding-bottom: 16px;
+    margin-top: 24px;
+}
