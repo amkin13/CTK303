@@ -1,0 +1,84 @@
+
+body {
+    background-image: url("background.jpg");
+}
+
+@keyframes star-twinkle {
+    0%   {transform: rotate(0deg);}
+    25%  {transform: rotate(7deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-7deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+.star {
+    width: 200px;
+    height: 200px;
+    animation: star-twinkle 3s ease-in-out infinite;
+}
+
+.star img {
+    width: 150px;
+    height: 150px;
+    vertical-align: middle;
+    transition: all 0.25s;
+}
+
+.star:hover img {
+    transform: scale(1.1);
+    filter: saturate(10.0);
+}
+
+#star1 {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+#star2 {
+    position: absolute;
+    left: 1200px;
+    top: 100px;
+}
+
+#star3 {
+    position: absolute;
+    left: 700px;
+    top: 300px;
+}
+
+#star4 {
+    position: absolute;
+    left: 100px;
+    top: 500px;
+}
+
+#star5 {
+    position: absolute;
+    left: 1200px;
+    top: 500px;
+}
+
+#star6 {
+    position: absolute;
+    left: 400px;
+    top: 175px;
+}
+
+#star7 {
+    position: absolute;
+    left: 400px;
+    top: 390px;
+}
+
+#star8 {
+    position: absolute;
+    left: 975px;
+    top: 175px;
+}
+
+#star9 {
+    position: absolute;
+    left: 975px;
+    top: 390px;
+}
