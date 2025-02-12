@@ -1,0 +1,65 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+}
+
+@keyframes fish {
+    0%      {transform: translate(-500px, 0px);}
+    97%     {transform: translate(2000px, -100px);}
+    98%     {transform: translate(2000px, 3000px);}
+    99%     {transform: translate(-500px, 3000px);}
+    100%    {transform: translate(-500px, 0px);}
+}
+
+@keyframes fish_backwards {
+    0%      {transform: translate(500px, 0px);}
+    97%     {transform: translate(-2000px, -100px);}
+    98%     {transform: translate(-2000px, 3000px);}
+    99%     {transform: translate(500px, 3000px);}
+    100%    {transform: translate(500px, 0px);}
+}
+
+.allFish {
+    width: 200px;
+    height: 200px;
+    animation: fish 16s linear infinite;
+}
+
+.allFish img {
+    width: 150px;
+    height: 150px;
+    vertical-align: middle;
+}
+
+.allFishBackwards {
+    width: 200px;
+    height: 200px;
+    animation: fish_backwards 16s linear infinite;
+}
+
+.allFishBackwards img {
+    width: 150px;
+    height: 150px;
+    vertical-align: middle;
+}
+
+#fish1 {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+#fish2 {
+    position: absolute;
+    left: 1200px;
+    top: 300px;
+}
+
+#fish3 {
+    position: absolute;
+    left: 275px;
+    top: 500px;
+}
