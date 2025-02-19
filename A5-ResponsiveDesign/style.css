@@ -1,0 +1,103 @@
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: url(pattern.png);
+}
+
+main {
+    grid-column: span 4;
+    background-color: white;
+    border-radius: 12px;
+    padding: 12px;
+    color: rgb(73, 73, 73);
+    box-shadow: 0.33em 0.33em rgb(0, 35, 142);
+}
+
+main ul li {
+    margin: 8px auto;
+}
+
+#wrapper {
+    margin: 1rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1rem;
+}
+
+#main_header {
+    color: white;
+    text-align: center;
+    background-color: gray;
+    padding: 1rem;
+    border-radius: 12px;
+}
+
+#main_cover {
+    grid-column: span 4;
+    border-radius: 12px;
+    box-shadow: 0.33em 0.33em rgb(0, 35, 142);
+    width: 100%;
+    height: auto;
+}
+
+#main_sources {
+    text-align: center;
+    background-color: rgb(211, 210, 232);
+    grid-column: span 4;
+    border-radius: 12px;
+    box-shadow: 0.33em 0.33em rgb(0, 35, 142);
+    padding: 8px;
+    padding-bottom: 16px;
+    margin-top: 24px;
+}
+
+#left_wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: span 4;
+    grid-column-gap: 1rem;
+}
+
+#left_nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: span 4;
+    grid-column-gap: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+#left_nav a {
+    background-color: rgb(0, 0, 127);
+    border-radius: 0.5rem;
+    margin: 0.5rem auto;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+	text-decoration: none;
+    grid-column: span 4;
+}
+
+/* Media queries */
+
+@media all and (min-width: 30rem) {
+    #left_nav { grid-column: span 2; margin-left: 1rem; }
+    #main_cover { grid-column: span 2; }
+    #left_nav a {grid-column: span 2;}
+    #left_wrapper {margin: 1rem auto;}
+}
+
+@media all and (min-width: 50rem){
+    body { max-width: 960px; margin: 0rem auto; padding: 0rem auto; }
+    #left_wrapper { grid-column: span 1; margin-bottom: 0px; }
+    main { grid-column: span 3; }
+    #left_nav { grid-column: span 4; margin-left: 0px; margin-right: 0px; }
+    #left_nav a {grid-column: span 4;}
+    #main_cover { grid-column: span 4; }
+}
