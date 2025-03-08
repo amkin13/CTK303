@@ -86,7 +86,7 @@ nav li a {
   display: block;
   background-image: url(assets/trbg.png);
   background-size: 24px;
-  background-position-x: 20;
+  background-position-x: 20px;
   font-family: Helvetica, Arial, sans-serif;
   color: black;
   text-transform: uppercase;
